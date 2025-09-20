@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav nav__container">
+                <img src="image/menu/logo.png" alt="" class="logo">
+                <ul class="menu">
+                    <li class="menu__list main_page">
+                        <a href="" class="menu__link">головна</a>
+                    </li>
+                    <li class="menu__list cats">
+                        <a href="" class="menu__link"><img src="image/menu/black-cat.png" alt=""
+                                class="menu__img">коти</a>
+                    </li>
+                    <li class="menu__list game_wiki">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller.png" alt=""
+                                class="menu__img">вікі</a>
+                    </li>
+                    <li class="menu__list games">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller (1).png" alt=""
+                                class="menu__img">ігри</a>
+                    </li>
+                    <li class="menu__list serials">
+                        <a href="" class="menu__link"><img src="image/menu/streaming-tv-app.png" alt=""
+                                class="menu__img">серіали</a>
+                    </li>
+                    <li class="menu__list crypta">
+                        <a href="" class="menu__link"><img src="image/menu/bitcoin.png" alt=""
+                                class="menu__img">крипта</a>
+                    </li>
+                    <li class="menu__list music_block">
+                        <a href="" class="menu__link"><img src="image/menu/music.png" alt=""
+                                class="menu__img">музика</a>
+                    </li>
+                    <li class="menu__list code_vs">
+                        <a href="" class="menu__link"><img src="image/menu/programmer.png" alt=""
+                                class="menu__img"><span>VS</span> code</a>
+                    </li>
+                    <li class="menu__list sports">
+                        <a href="" class="menu__link"><img src="image/menu/throw.png" alt="" class="menu__img">спорт</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="about__block">
+                <h2 class="about__cat-title">🎮 Ігрова вікі</h2>
+                <p class="about__cat-subtitle">Інформація про ігрові світи, персонажів і геймплей</p>
+            </div>
+            <div class="game-block game__container">
+                <div class="filter-row">
+                    <input type="text" id="search" placeholder="Введіть назву гри...">
+
+                    <div class="custom-select" id="genreSelect">
+                        <div class="selected" data-value="all">Всі жанри</div>
+                        <ul class="options">
+                            <li data-value="all" class="active">Всі жанри</li>
+                            <li data-value="Пригоди">Пригоди</li>
+                            <li data-value="Екшн">Екшн</li>
+                            <li data-value="RPG">RPG</li>
+                            <li data-value="Песочниця">Песочниця</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="games-grid" id="gamesList"></div>
+            </div>
+
+            <section class="info-section section__container">
+                <h2 class="info-section__title">
+                    <span class="material-symbols-outlined">sports_esports</span>
+                    Гайди та стратегії
+                </h2>
+                <div class="guides">
+                    <!-- Заголовок -->
+                    <div class="guides__row guides__row--header">
+                        <div class="guides__cell guides__cell--game">Гра</div>
+                        <div class="guides__cell guides__cell--title">Назва гайду</div>
+                        <div class="guides__cell guides__cell--type">Тип</div>
+                        <div class="guides__cell guides__cell--difficulty">Складність</div>
+                        <div class="guides__cell guides__cell--views">Перегляди</div>
+                    </div>
+
+                    <!-- Рядок 1 -->
+                    <div class="guides__row">
+                        <div class="guides__cell guides__cell--game">Elden Ring</div>
+                        <div class="guides__cell guides__cell--title">Гайд для початківців</div>
+                        <div class="guides__cell guides__cell--type"><span>Поради</span></div>
+                        <div class="guides__cell guides__cell--difficulty guides__cell--difficulty-easy">
+                            <span>Легкий</span></div>
+                        <div class="guides__cell guides__cell--views">15 420</div>
+                    </div>
+
+                    <!-- Рядок 2 -->
+                    <div class="guides__row">
+                        <div class="guides__cell guides__cell--game">Dark Souls 3</div>
+                        <div class="guides__cell guides__cell--title">Найкращі зброї для PvP</div>
+                        <div class="guides__cell guides__cell--type"><span>Стратегія</span></div>
+                        <div class="guides__cell guides__cell--difficulty guides__cell--difficulty-hard">
+                            <span>Складний</span></div>
+                        <div class="guides__cell guides__cell--views">8 750</div>
+                    </div>
+
+                    <!-- Рядок 3 -->
+                    <div class="guides__row">
+                        <div class="guides__cell guides__cell--game">Cyberpunk 2077</div>
+                        <div class="guides__cell guides__cell--title">Секретні локації</div>
+                        <div class="guides__cell guides__cell--type"><span>Секрети</span></div>
+                        <div class="guides__cell guides__cell--difficulty guides__cell--difficulty-medium">
+                            <span>Середній</span>
+                        </div>
+                        <div class="guides__cell guides__cell--views">12 300</div>
+                    </div>
+
+                    <!-- Рядок 4 -->
+                    <div class="guides__row">
+                        <div class="guides__cell guides__cell--game">Hades</div>
+                        <div class="guides__cell guides__cell--title">Оптимальні білди</div>
+                        <div class="guides__cell guides__cell--type"><span>Стратегія</span></div>
+                        <div class="guides__cell guides__cell--difficulty guides__cell--difficulty-medium">
+                            <span>Середній</span>
+                        </div>
+                        <div class="guides__cell guides__cell--views">9 840</div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="games-rating games__container info-section">
+                <div class="games-rating__item info-section">
+                    <div class="games-rating__info">
+                        <span class="games-rating__number">1</span>
+                        <p class="games-rating__title">The Last of Us Part II</p>
+                    </div>
+                    <p class="games-rating__score">9.6/10</p>
+                </div>
+
+                <div class="games-rating__item info-section">
+                    <div class="games-rating__info">
+                        <span class="games-rating__number">2</span>
+                        <p class="games-rating__title">God of War (2018)</p>
+                    </div>
+                    <p class="games-rating__score">9.5/10</p>
+                </div>
+
+                <div class="games-rating__item info-section">
+                    <div class="games-rating__info">
+                        <span class="games-rating__number">3</span>
+                        <p class="games-rating__title">Hollow Knight</p>
+                    </div>
+                    <p class="games-rating__score">9.4/10</p>
+                </div>
+
+                <div class="games-rating__item info-section">
+                    <div class="games-rating__info">
+                        <span class="games-rating__number">4</span>
+                        <p class="games-rating__title">Persona 5 Royal</p>
+                    </div>
+                    <p class="games-rating__score">9.3/10</p>
+                </div>
+
+                <div class="games-rating__item info-section">
+                    <div class="games-rating__info">
+                        <span class="games-rating__number">5</span>
+                        <p class="games-rating__title">Spider-Man 2</p>
+                    </div>
+                    <p class="games-rating__score">9.2/10</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/wiki.js"></script>
+</body>
+
+</html>

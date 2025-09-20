@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav nav__container">
+        <img src="image/menu/logo.png" alt="" class="logo">
+        <ul class="menu">
+          <li class="menu__list">
+            <a href="" class="menu__link">головна</a>
+          </li>
+          <li class="menu__list cats">
+            <a href="" class="menu__link"><img src="image/menu/black-cat.png" alt="" class="menu__img">коти</a>
+          </li>
+          <li class="menu__list game_wiki">
+            <a href="" class="menu__link"><img src="image/menu/game-controller.png" alt="" class="menu__img">вікі</a>
+          </li>
+          <li class="menu__list games">
+            <a href="" class="menu__link"><img src="image/menu/game-controller (1).png" alt=""
+                class="menu__img">ігри</a>
+          </li>
+          <li class="menu__list serials">
+            <a href="" class="menu__link"><img src="image/menu/streaming-tv-app.png" alt=""
+                class="menu__img">серіали</a>
+          </li>
+          <li class="menu__list crypta">
+            <a href="" class="menu__link"><img src="image/menu/bitcoin.png" alt="" class="menu__img">крипта</a>
+          </li>
+          <li class="menu__list music_block">
+            <a href="" class="menu__link"><img src="image/menu/music.png" alt="" class="menu__img">музика</a>
+          </li>
+          <li class="menu__list code_vs">
+            <a href="" class="menu__link"><img src="image/menu/programmer.png" alt="" class="menu__img"><span>VS</span>
+              code</a>
+          </li>
+          <li class="menu__list sports">
+            <a href="" class="menu__link"><img src="image/menu/throw.png" alt="" class="menu__img">спорт</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- блок з фільтром -->
+    <section class="info-section sport__container">
+      <div class="custom-select" id="sportSelect">
+        <div class="selected" data-value="all">Всі види спорту</div>
+        <ul class="options">
+          <li data-value="all" class="active">Всі види спорту</li>
+          <li data-value="Футбол">Футбол</li>
+          <li data-value="Баскетбол">Баскетбол</li>
+          <li data-value="Теніс">Теніс</li>
+          <li data-value="Плавання">Плавання</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- блок із новинами -->
+    <section class="info-section sport__container reveal">
+      <div class="sport-news-grid" id="newsList"></div>
+    </section>
+
+    <section class="info-section sport__container sport-grid reveal">
+      <div class="info-section result">
+        <h2 class="info-section__title">
+          <span class="material-symbols-outlined">trophy</span>
+          Результати матчів
+        </h2>
+        <div class="media-grid" id="mediaList"></div>
+        <div class="sport__item info-section">
+          <div class="sport__header">
+            <div>
+              <span class="sport-title">Футбол</span>
+              <span class="liga">УПЛ</span>
+            </div>
+            <span class="date">20.01.2024</span>
+          </div>
+          <div class="match">
+            <span class="team__title">Шахтар</span>
+            <span class="score">3</span>
+            <span class="vs">vs</span>
+            <span class="score">1</span>
+            <span class="team__title">Ворскла</span>
+          </div>
+        </div>
+        <div class="sport__item info-section">
+          <div class="sport__header">
+            <div>
+              <span class="sport-title">Футбол</span>
+              <span class="liga">УПЛ</span>
+            </div>
+            <span class="date">20.01.2024</span>
+          </div>
+          <div class="match">
+            <span class="team__title">Київ-Баскет</span>
+            <span class="score">89</span>
+            <span class="vs">vs</span>
+            <span class="score">76</span>
+            <span class="team__title">Дніпро</span>
+          </div>
+        </div>
+        <div class="sport__item info-section">
+          <div class="sport__header">
+            <div>
+              <span class="sport-title">Футбол</span>
+              <span class="liga">УПЛ</span>
+            </div>
+            <span class="date">20.01.2024</span>
+          </div>
+          <div class="match">
+            <span class="team__title">Динамо</span>
+            <span class="score">2</span>
+            <span class="vs">vs</span>
+            <span class="score">0</span>
+            <span class="team__title">Зоря</span>
+          </div>
+        </div>
+        <div class="sport__item info-section">
+          <div class="sport__header">
+            <div>
+              <span class="sport-title">Футбол</span>
+              <span class="liga">УПЛ</span>
+            </div>
+            <span class="date">20.01.2024</span>
+          </div>
+          <div class="match">
+            <span class="team__title">Металіст 1925</span>
+            <span class="score">1</span>
+            <span class="vs">vs</span>
+            <span class="score">1</span>
+            <span class="team__title">Кривбас</span>
+          </div>
+        </div>
+      </div>
+      <div class="info-section calendar">
+        <h2 class="info-section__title">
+          <span class="material-symbols-outlined">calendar_today</span>
+          Результати матчів
+        </h2>
+        <div class="sport__item info-section">
+          <div class="sport__header">
+            <div>
+              <span class="sport-title">Футбол</span>
+              <span class="liga">УПЛ</span>
+            </div>
+            <span class="date">20.01.2024
+              <br>18:00
+            </span>
+          </div>
+          <div class="match">
+            <div class="match-item">
+              <span class="team__title">Динамо</span>
+              <span class="vs">vs</span>
+              <span class="team__title">Шахтар</span>
+            </div>
+            <div class="place">
+              НСК Олімпійський
+            </div>
+          </div>
+        </div>
+        <div class="sport__item info-section">
+          <div class="sport__header">
+            <div>
+              <span class="sport-title">Баскетбол</span>
+              <span class="liga">Відбір ЧС</span>
+            </div>
+            <span class="date">20.01.2024
+              <br>18:00
+            </span>
+          </div>
+          <div class="match">
+            <div class="match-item">
+              <span class="team__title">Збірна України</span>
+              <span class="vs">vs</span>
+              <span class="team__title">Збірна Польщі</span>
+            </div>
+            <div class="place">
+              Палац спорту
+            </div>
+          </div>
+        </div>
+        <div class="sport__item info-section">
+          <div class="sport__header">
+            <div>
+              <span class="sport-title">Футбол</span>
+              <span class="liga">УПЛ</span>
+            </div>
+            <span class="date">20.01.2024
+              <br>18:00
+            </span>
+          </div>
+          <div class="match">
+            <div class="match-item">
+              <span class="team__title">Маріуполь</span>
+              <span class="vs">vs</span>
+              <span class="team__title">Олександрія</span>
+            </div>
+            <div class="place">
+              Стадіон Маріуполь
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section sport__container reveal">
+      <h2 class="info-section__title">
+        <span class="material-symbols-outlined">target</span>
+        Популярні види спорту
+      </h2>
+
+      <div class="info-section">
+        <p class="target-sport__title">
+          Футбол
+          <span class="interest">95%</span>
+        </p>
+        <div class="place">Найпопулярніший вид спорту в Україні</div>
+        <div class="interest-block interest-block-1">
+          <span></span>
+        </div>
+        <span class="liga">УПЛ</span>
+        <span class="liga">Перша ліга</span>
+        <span class="liga">Друга ліга</span>
+      </div>
+      <div class="info-section">
+        <p class="target-sport__title">
+          Баскетбол
+          <span class="interest">78%</span>
+        </p>
+        <div class="place">Швидко розвивається в Україні</div>
+        <div class="interest-block interest-block-2">
+          <span></span>
+        </div>
+        <span class="liga">Суперліга</span>
+        <span class="liga">Вища ліга</span>
+      </div>
+      <div class="info-section">
+        <p class="target-sport__title">
+          Теніс
+          <span class="interest">72%</span>
+        </p>
+        <div class="place">Індивідуальний вид спорту з великими успіхами</div>
+        <div class="interest-block interest-block-3">
+          <span></span>
+        </div>
+        <span class="liga">ATP</span>
+        <span class="liga">WTA</span>
+        <span class="liga">ITF</span>
+      </div>
+      <div class="info-section">
+        <p class="target-sport__title">
+          Волейбол
+          <span class="interest">65%</span>
+        </p>
+        <div class="place">Командний вид спорту з традиціями</div>
+        <div class="interest-block interest-block-4">
+          <span></span>
+        </div>
+        <span class="liga">Суперліга</span>
+        <span class="liga">Вища ліга</span>
+      </div>
+      <div class="info-section">
+        <p class="target-sport__title">
+          Легка атлетика
+          <span class="interest">58%</span>
+        </p>
+        <div class="place">Олімпійський вид спорту</div>
+        <div class="interest-block interest-block-5">
+          <span></span>
+        </div>
+        <span class="liga">Diamond League</span>
+        <span class="liga">World Athletics</span>
+      </div>
+    </section>
+
+    <section class="info-section sport__container sport-grid reveal">
+
+      <div class="info-section top-sportmen">
+        <h2 class="info-section__title">
+          <span class="material-symbols-outlined">group</span>
+          Топ спортсмени
+        </h2>
+        <div class="sport__item info-section">
+          <div class="top-sportmen__title">
+            Еліна Світоліна
+            <span class="top-sportmen__number">#15</span>
+          </div>
+          <p class="top-sport__name">Теніс</p>
+          <p class="top-sport__desc">WTA рейтинг 15, переможниця 16 турнірів</p>
+        </div>
+        <div class="sport__item info-section">
+          <div class="top-sportmen__title">
+            Олександр Усик
+            <span class="top-sportmen__number">#1</span>
+          </div>
+          <p class="top-sport__name">Бокс</p>
+          <p class="top-sport__desc">Чемпіон світу в суперважкій вазі</p>
+        </div>
+        <div class="sport__item info-section">
+          <div class="top-sportmen__title">
+            Ярослава Магучіх
+            <span class="top-sportmen__number">#1</span>
+          </div>
+          <p class="top-sport__name">Легка атлетика</p>
+          <p class="top-sport__desc">Чемпіонка світу зі стрибків у висоту</p>
+        </div>
+        <div class="sport__item info-section">
+          <div class="top-sportmen__title">
+            Андрій Ярмоленко
+            <span class="top-sportmen__number">#7</span>
+          </div>
+          <p class="top-sport__name">Футбол</p>
+          <p class="top-sport__desc">Капітан збірної України, 120+ матчів</p>
+        </div>
+      </div>
+      <div class="info-section statistics">
+        <h2 class="info-section__title">
+          Топ спортсмени
+        </h2>
+        <table class="statistic-table">
+          <tr>
+            <th>Команда</th>
+            <th>В</th>
+            <th>Н</th>
+            <th>П</th>
+            <th>Очки</th>
+          </tr>
+          <tr>
+            <th>Шахтар <br><span class="statistic-sport__name">Футбол</span></th>
+            <td>18</td>
+            <td>4</td>
+            <td>2</td>
+            <th>58</th>
+          </tr>
+          <tr>
+            <th>Динамо <br><span class="statistic-sport__name">Футбол</span></th>
+            <td>16</td>
+            <td>6</td>
+            <td>2</td>
+            <th>54</th>
+          </tr>
+          <tr>
+            <th>Київ-Баскет <br><span class="statistic-sport__name">Баскетбол</span></th>
+            <td>22</td>
+            <td>0</td>
+            <td>3</td>
+            <th>44</th>
+          </tr>
+          <tr>
+            <th>Дніпро <br><span class="statistic-sport__name">Баскетбол</span></th>
+            <td>19</td>
+            <td>0</td>
+            <td>6</td>
+            <th>38</th>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/sport.js"></script>
+  <script src="js/scrollsport.js"></script>
+</body>
+
+</html>

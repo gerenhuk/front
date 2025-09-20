@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav nav__container">
+                <img src="image/menu/logo.png" alt="" class="logo">
+                <ul class="menu">
+                    <li class="menu__list">
+                        <a href="" class="menu__link">головна</a>
+                    </li>
+                    <li class="menu__list cats">
+                        <a href="" class="menu__link"><img src="image/menu/black-cat.png" alt=""
+                                class="menu__img">коти</a>
+                    </li>
+                    <li class="menu__list game_wiki">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller.png" alt=""
+                                class="menu__img">вікі</a>
+                    </li>
+                    <li class="menu__list games">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller (1).png" alt=""
+                                class="menu__img">ігри</a>
+                    </li>
+                    <li class="menu__list serials">
+                        <a href="" class="menu__link"><img src="image/menu/streaming-tv-app.png" alt=""
+                                class="menu__img">серіали</a>
+                    </li>
+                    <li class="menu__list crypta">
+                        <a href="" class="menu__link"><img src="image/menu/bitcoin.png" alt=""
+                                class="menu__img">крипта</a>
+                    </li>
+                    <li class="menu__list music_block">
+                        <a href="" class="menu__link"><img src="image/menu/music.png" alt=""
+                                class="menu__img">музика</a>
+                    </li>
+                    <li class="menu__list code_vs">
+                        <a href="" class="menu__link"><img src="image/menu/programmer.png" alt=""
+                                class="menu__img"><span>VS</span> code</a>
+                    </li>
+                    <li class="menu__list sports">
+                        <a href="" class="menu__link"><img src="image/menu/throw.png" alt="" class="menu__img">спорт</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <main class="main">
+            <div class="nav-block">
+                <button class="nav__btn active" data-target="band">Billy Talent</button>
+                <button class="nav__btn" data-target="discography">Про альбоми</button>
+                <button class="nav__btn" data-target="members">Про саму групу</button>
+            </div>
+
+            <!-- Секція 1 -->
+            <section id="band" class="content-section content__container">
+                <h2 class="info-section__title">
+                    <span class="material-symbols-outlined">headphones</span>
+                    Billy Talent
+                </h2>
+                <p class="info-section__desc">Канадський панк-рок гурт</p>
+                <div class="media-grid" id="mediaList"></div>
+
+                <div class="band__bio">
+                    <img src="https://images.unsplash.com/photo-1725417835685-b8541ebfac9e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Billy Talent" class="band__image">
+                    <div class="band__text">
+                        <h3>Біографія</h3>
+                        <p>
+                            Billy Talent — канадський панк-рок гурт, утворений у 1993 році в місті Стрітсвілль, Онтаріо.
+                            Спочатку група називалася "Pezz", але змінила назву на "Billy Talent" у 2001 році.
+                        </p>
+                        <p>
+                            Група відома своїм енергійним звучанням, потужними гітарними рифами та харизматичним вокалом
+                            Benjamin Kowalewicz. За час існування вони випустили п'ять студійних альбомів та здобули
+                            визнання по всьому світу.
+                        </p>
+                        <div class="tags">
+                            <span>Панк-рок</span>
+                            <span>Альтернативний рок</span>
+                            <span>Канада</span>
+                            <span>З 1993</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="facts info-section fact__container">
+                    <h2 class="fact-title">Цікаві факти</h2>
+                    <div class="facts-grid">
+                        <div class="fact-item">Група утворилась у 1993 році під назвою "Pezz"</div>
+                        <div class="fact-item">Назву "Billy Talent" взяли з роману "Hard Core Logo"</div>
+                        <div class="fact-item">Їхня пісня "Try Honesty" стала золотим хітом у Канаді</div>
+                        <div class="fact-item">Група має більше 3 мільйонів проданих альбомів по всьому світу</div>
+                        <div class="fact-item">Benjamin Kowalewicz відомий своєю енергійною манерою виступу</div>
+                        <div class="fact-item">Ian D'Sa також продюсує музику для інших гуртів</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секція 2 -->
+            <section id="discography" class="info-section content-section hidden content__container">
+                <h2 class="info-section__title">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    Нові ігри
+                </h2>
+                <p class="info-section__desc">Список альбомів з обкладинками й треклистами</p>
+                <div class="info-section album album-item">
+                    <img src="https://images.unsplash.com/photo-1621311863868-6ae8ad6fbcb3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Billy Talent Album">
+                    <div class="album__info album-item">
+                        <h3>Billy Talent</h3>
+                        <p>Рік випуску: 2003</p>
+                        <h4>Треклист:</h4>
+                        <ol>
+                            <li>This Is How It Goes</li>
+                            <li>Living in the Shadows</li>
+                            <li>Try Honesty</li>
+                            <li>The Ex</li>
+                            <li>River Below</li>
+                        </ol>
+                        <span class="album__tag">Punk Rock</span>
+                    </div>
+                </div>
+                <div class="info-section album album-item">
+                    <img src="https://images.unsplash.com/photo-1621311863868-6ae8ad6fbcb3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Billy Talent Album">
+                    <div class="album__info album-item">
+                        <h3>Billy Talent</h3>
+                        <p>Рік випуску: 2003</p>
+                        <h4>Треклист:</h4>
+                        <ol>
+                            <li>This Is How It Goes</li>
+                            <li>Living in the Shadows</li>
+                            <li>Try Honesty</li>
+                            <li>The Ex</li>
+                            <li>River Below</li>
+                        </ol>
+                        <span class="album__tag">Punk Rock</span>
+                    </div>
+                </div>
+                <div class="info-section album album-item">
+                    <img src="https://images.unsplash.com/photo-1621311863868-6ae8ad6fbcb3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Billy Talent Album">
+                    <div class="album__info album-item">
+                        <h3>Billy Talent</h3>
+                        <p>Рік випуску: 2003</p>
+                        <h4>Треклист:</h4>
+                        <ol>
+                            <li>This Is How It Goes</li>
+                            <li>Living in the Shadows</li>
+                            <li>Try Honesty</li>
+                            <li>The Ex</li>
+                            <li>River Below</li>
+                        </ol>
+                        <span class="album__tag">Punk Rock</span>
+                    </div>
+                </div>
+                <div class="info-section album album-item">
+                    <img src="https://images.unsplash.com/photo-1621311863868-6ae8ad6fbcb3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Billy Talent Album">
+                    <div class="album__info album-item">
+                        <h3>Billy Talent</h3>
+                        <p>Рік випуску: 2003</p>
+                        <h4>Треклист:</h4>
+                        <ol>
+                            <li>This Is How It Goes</li>
+                            <li>Living in the Shadows</li>
+                            <li>Try Honesty</li>
+                            <li>The Ex</li>
+                            <li>River Below</li>
+                        </ol>
+                        <span class="album__tag">Punk Rock</span>
+                    </div>
+                </div>
+                <div class="info-section album album-item">
+                    <img src="https://images.unsplash.com/photo-1621311863868-6ae8ad6fbcb3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Billy Talent Album">
+                    <div class="album__info album-item">
+                        <h3>Billy Talent</h3>
+                        <p>Рік випуску: 2003</p>
+                        <h4>Треклист:</h4>
+                        <ol>
+                            <li>This Is How It Goes</li>
+                            <li>Living in the Shadows</li>
+                            <li>Try Honesty</li>
+                            <li>The Ex</li>
+                            <li>River Below</li>
+                        </ol>
+                        <span class="album__tag">Punk Rock</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секція 3 -->
+            <section id="members" class="content-section hidden content__container">
+                <h2 class="info-section__title">
+                    <span class="material-symbols-outlined">group</span>
+                    Склад гурту
+                </h2>
+                <div class="member__grid">
+                    <div class="info-section member-block">
+                        <h3>Benjamin Kowalewicz</h3>
+                        <p class="musician">Вокаліст</p>
+                        <p class="instrument">Інструменти: Вокал</p>
+                        <p class="year">У гурті з 1993</p>
+                    </div>
+                    <div class="info-section member-block">
+                        <h3>Ian D'Sa</h3>
+                        <p class="musician">Гітарист</p>
+                        <p class="instrument">Інструменти: Гітара, бек-вокал</p>
+                        <p class="year">У гурті з 1993</p>
+                    </div>
+                    <div class="info-section member-block">
+                        <h3>Jonathan Gallant</h3>
+                        <p class="musician">Басист</p>
+                        <p class="instrument">Інструменти: Бас-гітара, бек-вокал</p>
+                        <p class="year">У гурті з 1993</p>
+                    </div>
+                    <div class="info-section member-block">
+                        <h3>Jordan Hastings</h3>
+                        <p class="musician">Барабанщик</p>
+                        <p class="instrument">Інструменти: Барабани</p>
+                        <p class="year">У гурті з 2009</p>
+                    </div>
+                </div>
+
+                <div class="music-section">
+                    <h2>▶ Відео/кліпи</h2>
+
+                    <div class="track" onclick="playSong('music/Reckless_Paradise.mp3')">
+                        <div class="track-info">
+                            <span class="track-title">Reckless Paradise</span>
+                            <span class="track-year">2003</span>
+                        </div>
+                        <div class="track-views">15M переглядів</div>
+                    </div>
+
+                    <div class="track" onclick="playSong('music/Billy Talent - Devil in a Midnight Mass.mp3')">
+                        <div class="track-info">
+                            <span class="track-title">Red Flag</span>
+                            <span class="track-year">2006</span>
+                        </div>
+                        <div class="track-views">12M переглядів</div>
+                    </div>
+
+                    <div class="track" onclick="playSong('music/rusted_from_the_rain.mp3')">
+                        <div class="track-info">
+                            <span class="track-title">Rusted from the Rain</span>
+                            <span class="track-year">2009</span>
+                        </div>
+                        <div class="track-views">8M переглядів</div>
+                    </div>
+
+                    <div class="track" onclick="playSong('music/Billy Talent - The Ex.mp3')">
+                        <div class="track-info">
+                            <span class="track-title">Viking Death March</span>
+                            <span class="track-year">2012</span>
+                        </div>
+                        <div class="track-views">6M переглядів</div>
+                    </div>
+
+                    <div class="track" onclick="playSong('music/Billy Talent,This Is How It Goes.mp3')">
+                        <div class="track-info">
+                            <span class="track-title">Afraid of Heights</span>
+                            <span class="track-year">2016</span>
+                        </div>
+                        <div class="track-views">4M переглядів</div>
+                    </div>
+
+                    <!-- Плеєр -->
+                    <audio id="player" controls>
+                        <source src="" type="audio/mpeg">
+                        Ваш браузер не підтримує аудіо-тег.
+                    </audio>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/music.js"></script>
+</body>
+
+</html>

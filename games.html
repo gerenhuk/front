@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+
+    <style>
+    .game-preview {
+        position: absolute;
+        pointer-events: none;
+        display: none;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+</style>
+
+
+<!-- Плаваюче прев’ю -->
+<img class="game-preview" id="gamePreview" src="" alt="preview">
+
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav nav__container">
+                <img src="image/menu/logo.png" alt="" class="logo">
+                <ul class="menu">
+                    <li class="menu__list main_page">
+                        <a href="" class="menu__link">головна</a>
+                    </li>
+                    <li class="menu__list cats">
+                        <a href="" class="menu__link"><img src="image/menu/black-cat.png" alt=""
+                                class="menu__img">коти</a>
+                    </li>
+                    <li class="menu__list game_wiki">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller.png" alt=""
+                                class="menu__img">вікі</a>
+                    </li>
+                    <li class="menu__list games">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller (1).png" alt=""
+                                class="menu__img">ігри</a>
+                    </li>
+                    <li class="menu__list serials">
+                        <a href="" class="menu__link"><img src="image/menu/streaming-tv-app.png" alt=""
+                                class="menu__img">серіали</a>
+                    </li>
+                    <li class="menu__list crypta">
+                        <a href="" class="menu__link"><img src="image/menu/bitcoin.png" alt=""
+                                class="menu__img">крипта</a>
+                    </li>
+                    <li class="menu__list music_block">
+                        <a href="" class="menu__link"><img src="image/menu/music.png" alt=""
+                                class="menu__img">музика</a>
+                    </li>
+                    <li class="menu__list code_vs">
+                        <a href="" class="menu__link"><img src="image/menu/programmer.png" alt=""
+                                class="menu__img"><span>VS</span> code</a>
+                    </li>
+                    <li class="menu__list sports">
+                        <a href="" class="menu__link"><img src="image/menu/throw.png" alt="" class="menu__img">спорт</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="about__block">
+                <h2 class="about__cat-title"><img src="https://cdn-icons-png.flaticon.com/512/742/742263.png" alt="" class="game-icon"> Ігри</h2>
+                <p class="about__cat-subtitle">Нові ігри, рекомендації та топ-10</p>
+            </div>
+
+            <section class="info-section section__container games__section">
+                <h2 class="info-section__title">
+                    <span class="material-symbols-outlined">bolt</span>
+                    Нові ігри
+                </h2>
+                <p class="info-section__desc">Останні релізи з обкладинками</p>
+                <div class="new__game-grid">
+                    <article class="new__game-item">
+                        <img src="https://i.pinimg.com/1200x/4b/94/d5/4b94d5168bb2ab4311076369169cc441.jpg"
+                            alt="" class="new__game-img">
+                        <div class="new__game-desc">
+                            <h2 class="new__game-title">Spider-Man 2</h2>
+                            <p class="new__game-studio">Insomniac Games</p>
+                            <div class="new__game-meta">
+                                <span class="new__game-genre">Екшн-пригоди</span>
+                                <span class="new__game-platform">PS5</span>
+                            </div>
+                            <div class="new__game-extra">
+                                <span class="new__game-price">$69.99</span>
+                                <span class="new__game-date">20.10.2023</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="new__game-item">
+                        <img src="https://i.pinimg.com/736x/bb/b5/66/bbb5669335e6528d83f35dda866a2c87.jpg"
+                            alt="" class="new__game-img">
+                        <div class="new__game-desc">
+                            <h2 class="new__game-title">Baldur's Gate 3</h2>
+                            <p class="new__game-studio">Larian Studios</p>
+                            <div class="new__game-meta">
+                                <span class="new__game-genre">RPG</span>
+                                <span class="new__game-platform">PC, PS5</span>
+                            </div>
+                            <div class="new__game-extra">
+                                <span class="new__game-price">$59.99</span>
+                                <span class="new__game-date">03.08.2023</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="new__game-item">
+                        <img src="https://i.pinimg.com/736x/c0/bc/ef/c0bcef1d30eed082f8526eabcce2165d.jpg"
+                            alt="" class="new__game-img">
+                        <div class="new__game-desc">
+                            <h2 class="new__game-title">Alan Wake 2</h2>
+                            <p class="new__game-studio">Remedy Entertainment</p>
+                            <div class="new__game-meta">
+                                <span class="new__game-genre">Хоррор</span>
+                                <span class="new__game-platform">PC, PS5, Xbox</span>
+                            </div>
+                            <div class="new__game-extra">
+                                <span class="new__game-price">$49.99</span>
+                                <span class="new__game-date">27.10.2023</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="new__game-item">
+                        <img src="https://i.pinimg.com/736x/af/c4/b8/afc4b851f0ffae8fb8db4906095994e0.jpg"
+                            alt="" class="new__game-img">
+                        <div class="new__game-desc">
+                            <h2 class="new__game-title">Super Mario Bros. Wonder</h2>
+                            <p class="new__game-studio">Nintendo</p>
+                            <div class="new__game-meta">
+                                <span class="new__game-genre">Платформер</span>
+                                <span class="new__game-platform">Nintendo Switch</span>
+                            </div>
+                            <div class="new__game-extra">
+                                <span class="new__game-price">$59.99</span>
+                                <span class="new__game-date">20.10.2023</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="info-section section__container recommended__games">
+                <h2 class="info-section__title">
+                    <span class="material-symbols-outlined">star</span>
+                    Рекомендовані ігри
+                </h2>
+                <p class="info-section__desc">Картки з коротким описом</p>
+                <div class="recommended__games-card info-section"  data-image="https://i.pinimg.com/1200x/bd/b8/ec/bdb8eca07de123c1c9f6e0801c817e6a.jpg">
+                    <div class="recommended__games-left" >
+                        <div class="recommended__games-title">Hades</div>
+                        <div class="recommended__games-desc">Рогалік від майстрів Supergiant Games з неймовірною
+                            історією та геймплеєм.</div>
+                        <ul class="recommended__games-features">
+                            <li>Чудова історія</li>
+                            <li>Неймовірний арт-стиль</li>
+                            <li>Високий реплей-вью</li>
+                        </ul>
+                    </div>
+                    <div class="recommended__games-right">
+                        <p class="recommended__games-score"><span>9.5/10</span></p>
+                        <p class="recommended__games-time"><span>20–50 годин</span></p>
+                    </div>
+                </div>
+                <div class="recommended__games-card info-section" data-image="https://i.pinimg.com/736x/87/57/4b/87574b52f44fc6001c5477a09f81a662.jpg">
+                    <div class="recommended__games-left">
+                        <div class="recommended__games-title">Celeste</div>
+                        <div class="recommended__games-desc">Платформер про подолання внутрішніх демонів та складних
+                            рівнів.</div>
+                        <ul class="recommended__games-features">
+                            <li>Емоційна історія</li>
+                            <li>Ідеальне управління</li>
+                            <li>Мотивуючий саундтрек</li>
+                        </ul>
+                    </div>
+                    <div class="recommended__games-right">
+                        <p class="recommended__games-score"><span>9.3/10</span></p>
+                        <p class="recommended__games-time"><span>8-12 годин</span></p>
+                    </div>
+                </div>
+                <div class="recommended__games-card info-section"  data-image="https://i.pinimg.com/736x/b3/bb/90/b3bb90f1e80d335cf72e945222ebf347.jpg">
+                    <div class="recommended__games-left">
+                        <div class="recommended__games-title">Stardew Valley</div>
+                        <div class="recommended__games-desc">Релаксуюча фермерська симуляція з величезною кількістю
+                            контенту.</div>
+                        <ul class="recommended__games-features">
+                            <li>Розслабляючий геймплей</li>
+                            <li>Безліч активностей</li>
+                            <li>Чудове ком'юніті</li>
+                        </ul>
+                    </div>
+                    <div class="recommended__games-right">
+                        <p class="recommended__games-score"><span>9.1/10</span></p>
+                        <p class="recommended__games-time"><span>100+ годин</span></p>
+                    </div>
+                </div>
+            </section>
+            <section class="top__section section__container">
+                <div class="top-games top-games__grid info-section">
+                    <div class="top-games__item-right info-section">
+                        <h2 class="info-section__title">Топ-10 ігор</h2>
+                        <p class="info-section__desc">Рейтинговий список</p>
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">1</span>
+                                <p class="top-games__title">The Legend of Zelda: Tears of the Kingdom</p>
+                            </div>
+                            <span class="top-games__score">9.8/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">2</span>
+                                <p class="top-games__title">Baldur's Gate 3</p>
+                            </div>
+                            <span class="top-games__score">9.7/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">3</span>
+                                <p class="top-games__title">The Last of Us Part I</p>
+                            </div>
+                            <span class="top-games__score">9.6/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">4</span>
+                                <p class="top-games__title">Elden Ring</p>
+                            </div>
+                            <span class="top-games__score">9.5/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">5</span>
+                                <p class="top-games__title">God of War Ragnarök</p>
+                            </div>
+                            <span class="top-games__score">9.4/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">6</span>
+                                <p class="top-games__title">Horizon Forbidden West</p>
+                            </div>
+                            <span class="top-games__score">9.3/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">7</span>
+                                <p class="top-games__title">Spider-Man 2</p>
+                            </div>
+                            <span class="top-games__score">9.2/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">8</span>
+                                <p class="top-games__title">Alan Wake 2</p>
+                            </div>
+                            <span class="top-games__score">9.1/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">9</span>
+                                <p class="top-games__title">Super Mario Bros. Wonder</p>
+                            </div>
+                            <span class="top-games__score">9/10</span>
+                        </div>
+    
+                        <div class="top-games__item">
+                            <div class="top-games__info">
+                                <span class="top-games__number">10</span>
+                                <p class="top-games__title">Pizza Tower</p>
+                            </div>
+                            <span class="top-games__score">8.9/10</span>
+                        </div>
+                    </div>
+                    <div class="expected-releases info-section">
+                        <h2 class="info-section__title">
+                    <span class="material-symbols-outlined">date_range</span>
+                    Рекомендовані ігри
+                    </h2>
+                        <div class="expected-releases__item info-section recommended__games-card"  data-image="https://i.pinimg.com/1200x/ba/97/48/ba9748937cbe4a2c6c8f1dceacab7b86.jpg">
+                            <div class="expected-releases__left">
+                                <h3 class="expected-releases__title">Final Fantasy VII Rebirth</h3>
+                                <p class="expected-releases__studio">Square Enix</p>
+                                <p class="expected-releases__platforms">PS5</p>
+                            </div>
+                            <div class="expected-releases__right">
+                                <span class="expected-releases__hype expected-releases__hype--high">Високий</span>
+                                <span class="expected-releases__date">29.02.2024</span>
+                            </div>
+                        </div>
+    
+                        <div class="expected-releases__item info-section recommended__games-card" data-image="https://i.pinimg.com/736x/c0/f7/6b/c0f76bd1e2fed89571c81af7e8ebbd9f.jpg">
+                            <div class="expected-releases__left">
+                                <h3 class="expected-releases__title">Tekken 8</h3>
+                                <p class="expected-releases__studio">Bandai Namco</p>
+                                <p class="expected-releases__platforms">PC, PS5, Xbox</p>
+                            </div>
+                            <div class="expected-releases__right">
+                                <span class="expected-releases__hype expected-releases__hype--medium">Середній</span>
+                                <span class="expected-releases__date">26.01.2024</span>
+                            </div>
+                        </div>
+    
+                        <div class="expected-releases__item info-section recommended__games-card" data-image="https://i.pinimg.com/736x/ad/c9/7e/adc97ee71e7064722afeabf39ccc8246.jpg">
+                            <div class="expected-releases__left">
+                                <h3 class="expected-releases__title">Helldivers 2</h3>
+                                <p class="expected-releases__studio">Arrowhead Game Studios</p>
+                                <p class="expected-releases__platforms">PC, PS5</p>
+                            </div>
+                            <div class="expected-releases__right">
+                                <span class="expected-releases__hype expected-releases__hype--medium">Середній</span>
+                                <span class="expected-releases__date">08.02.2024</span>
+                            </div>
+                        </div>
+    
+                        <div class="expected-releases__item info-section recommended__games-card" data-image="https://i.pinimg.com/736x/bb/70/e5/bb70e5e9b8a614f2ff15dd76dced6bec.jpg">
+                            <div class="expected-releases__left">
+                                <h3 class="expected-releases__title">Skull and Bones</h3>
+                                <p class="expected-releases__studio">Ubisoft</p>
+                                <p class="expected-releases__platforms">PC, PS5, Xbox</p>
+                            </div>
+                            <div class="expected-releases__right">
+                                <span class="expected-releases__hype expected-releases__hype--low">Низький</span>
+                                <span class="expected-releases__date">16.02.2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section >
+
+        </main>
+    </div>
+    <script src="js/navigation.js"></script>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav nav__container">
+        <img src="image/menu/logo.png" alt="" class="logo">
+        <ul class="menu">
+          <li class="menu__list">
+            <a href="" class="menu__link">головна</a>
+          </li>
+          <li class="menu__list cats">
+            <a href="" class="menu__link"><img src="image/menu/black-cat.png" alt="" class="menu__img">коти</a>
+          </li>
+          <li class="menu__list game_wiki">
+            <a href="" class="menu__link"><img src="image/menu/game-controller.png" alt="" class="menu__img">вікі</a>
+          </li>
+          <li class="menu__list games">
+            <a href="" class="menu__link"><img src="image/menu/game-controller (1).png" alt=""
+                class="menu__img">ігри</a>
+          </li>
+          <li class="menu__list serials">
+            <a href="" class="menu__link"><img src="image/menu/streaming-tv-app.png" alt=""
+                class="menu__img">серіали</a>
+          </li>
+          <li class="menu__list crypta">
+            <a href="" class="menu__link"><img src="image/menu/bitcoin.png" alt="" class="menu__img">крипта</a>
+          </li>
+          <li class="menu__list music_block">
+            <a href="" class="menu__link"><img src="image/menu/music.png" alt="" class="menu__img">музика</a>
+          </li>
+          <li class="menu__list code_vs">
+            <a href="" class="menu__link"><img src="image/menu/programmer.png" alt="" class="menu__img"><span>VS</span>
+              code</a>
+          </li>
+          <li class="menu__list sports">
+            <a href="" class="menu__link"><img src="image/menu/throw.png" alt="" class="menu__img">спорт</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Блок з фільтром -->
+      <div class="info-section serial__container">
+        <h2 class="info-section__title">
+          <span class="material-symbols-outlined">filter_alt</span>
+          Графік динаміки курсів
+        </h2>
+        <div class="custom-select" id="genreSelect">
+          <div class="selected" data-value="all">Всі жанри</div>
+          <ul class="options">
+            <li data-value="all" class="active">Всі жанри</li>
+            <li data-value="Фантастика">Фантастика</li>
+            <li data-value="Драма">Драма</li>
+            <li data-value="Наукова фантастика">Наукова фантастика</li>
+            <li data-value="Екшн">Екшн</li>
+            <li data-value="Фентезі">Фентезі</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Блок із фільмами -->
+      <div class="info-section serial__container">
+        <h2 class="info-section__title">
+          <span class="material-symbols-outlined">tv</span>
+          Графік динаміки курсів
+        </h2>
+        <div class="media-grid" id="mediaList"></div>
+      </div>
+
+      <section class="serials-grid serial__container">
+        <div class="info-section new__season">
+          <h2 class="info-section__title">
+            <span class="material-symbols-outlined">calendar_today</span>
+            Нові сезони
+          </h2>
+          <div class="serial__infom-block">
+            <div class="serial__item info-section">
+              <p class="serial__title">Дім дракона<span>Фантастика</span></p>
+              <p class="serial-desc">Сезон 2</p>
+              <div class="serial-info">
+                <p class="episode">8 епізодів</p>
+                <p class="date">16.06.2024</p>
+              </div>
+            </div>
+            <div class="serial__item info-section">
+              <p class="serial__title">Мандалорець<span>Фантастика</span></p>
+              <p class="serial-desc">Сезон 4</p>
+              <div class="serial-info">
+                <p class="episode">12 епізодів</p>
+                <p class="date">12.03.2024</p>
+              </div>
+            </div>
+            <div class="serial__item info-section">
+              <p class="serial__title">Бойовий заклик<span>Драма</span></p>
+              <p class="serial-desc">Сезон 4</p>
+              <div class="serial-info">
+                <p class="episode">10 епізодів</p>
+                <p class="date">08.05.2024</p>
+              </div>
+            </div>
+            <div class="serial__item info-section">
+              <p class="serial__title">Хлопаки<span>Екшн</span></p>
+              <p class="serial-desc">Сезон 5</p>
+              <div class="serial-info">
+                <p class="episode">8 епізодів</p>
+                <p class="date">13.06.2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-section recommended">
+          <h2 class="info-section__title">
+            <span class="material-symbols-outlined">star</span>
+            Рекомендовано подивитися
+          </h2>
+          <div class="serial__infom-block">
+            <div class="serial__item info-section">
+              <p class="serial__title">Перерва<span>8.5/10</span></p>
+              <p class="serial-desc">Якщо вам сподобався "Офіс"</p>
+              <p class="genre badge">Комедія</p>
+            </div>
+            <div class="serial__item info-section">
+              <p class="serial__title">Кільця влади<span>7.8/10</span></p>
+              <p class="serial-desc">Фанатам "Гри престолів"</p>
+              <p class="genre badge">Фантастика</p>
+            </div>
+            <div class="serial__item info-section">
+              <p class="serial__title">Відьмак<span>8.2/10</span></p>
+              <p class="serial-desc">Любителям фентезі</p>
+              <p class="genre badge">Фантастика</p>
+            </div>
+            <div class="serial__item info-section">
+              <p class="serial__title">Благочестивих драконів немає<span>8.7/10</span></p>
+              <p class="serial-desc">Для шанувальників драми</p>
+              <p class="genre badge">Драма</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/serials.js"></script>
+</body>
+
+</html>

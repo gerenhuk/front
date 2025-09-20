@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav nav__container">
+                <img src="image/menu/logo.png" alt="" class="logo">
+                <ul class="menu">
+                    <li class="menu__list main_page">
+                        <a href="" class="menu__link">головна</a>
+                    </li>
+                    <li class="menu__list cats">
+                        <a href="" class="menu__link"><img src="image/menu/black-cat.png" alt=""
+                                class="menu__img">коти</a>
+                    </li>
+                    <li class="menu__list game_wiki">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller.png" alt=""
+                                class="menu__img">вікі</a>
+                    </li>
+                    <li class="menu__list games">
+                        <a href="" class="menu__link"><img src="image/menu/game-controller (1).png" alt=""
+                                class="menu__img">ігри</a>
+                    </li>
+                    <li class="menu__list serials">
+                        <a href="" class="menu__link"><img src="image/menu/streaming-tv-app.png" alt=""
+                                class="menu__img">серіали</a>
+                    </li>
+                    <li class="menu__list crypta">
+                        <a href="" class="menu__link"><img src="image/menu/bitcoin.png" alt=""
+                                class="menu__img">крипта</a>
+                    </li>
+                    <li class="menu__list music_block">
+                        <a href="" class="menu__link"><img src="image/menu/music.png" alt=""
+                                class="menu__img">музика</a>
+                    </li>
+                    <li class="menu__list code_vs">
+                        <a href="" class="menu__link"><img src="image/menu/programmer.png" alt=""
+                                class="menu__img"><span>VS</span> code</a>
+                    </li>
+                    <li class="menu__list sports">
+                        <a href="" class="menu__link"><img src="image/menu/throw.png" alt="" class="menu__img">спорт</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="about__block">
+                <h2 class="about__cat-title">🐱Про котів</h2>
+                <p class="about__cat-subtitle">Все, що ви хотіли знати про наших пухнастих друзів</p>
+            </div>
+            <section class="galery galery__container info-section">
+                <h2 class="info-section__title"><span class="material-symbols-outlined">favorite</span> Галерея фото
+                    котів</h2>
+                <div class="gallery__grid">
+                    <div class="gallery__item"><img
+                            src="image/cats/1.jpg"
+                            alt="" class="gallery__img"></div>
+                    <div class="gallery__item"><img
+                            src="image/cats/2.jpg"
+                            alt="" class="gallery__img"></div>
+                    <div class="gallery__item"><img
+                            src="image/cats/3.jpg"
+                            alt="" class="gallery__img"></div>
+                    <div class="gallery__item"><img
+                            src="image/cats/4.jpg"
+                            alt="" class="gallery__img"></div>
+                    <div class="gallery__item"><img
+                            src="image/cats/5.jpg"
+                            alt="" class="gallery__img"></div>
+                    <div class="gallery__item"><img
+                            src="image/cats/6.jpg"
+                            alt="" class="gallery__img"></div>
+                    <div class="gallery__item"><img
+                            src="image/cats/7.jpg"
+                            alt="" class="gallery__img"></div>
+                    <div class="gallery__item"><img
+                            src="image/cats/8.jpg"
+                            alt="" class="gallery__img"></div>
+                </div>
+            </section>
+            <!-- Секція з фактами -->
+            <section class="info-section cats-facts secrion__container">
+                <h2 class="info-section__title"><span class="material-symbols-outlined">info</span> Цікаві факти про
+                    котів</h2>
+                <button id="randomFactBtn" class="random-fact__btn">🎲 Показати випадковий факт</button>
+                <div class="info-section__list" id="factsList">
+                    <div class="info-section__item cats-facts__item">Коти проводять 70% свого життя уві сні</div>
+                    <div class="info-section__item cats-facts__item">У котів 32 м'язи в кожному вусі</div>
+                    <div class="info-section__item cats-facts__item">Коти можуть робити понад 100 різних звуків</div>
+                    <div class="info-section__item cats-facts__item">Кішки не можуть відчувати солодкий смак</div>
+                </div>
+                <p id="randomFactResult" class="random-fact__result"></p>
+            </section>
+
+            <!-- Секція з породами -->
+            <section class="info-section cats-breeds secrion__container">
+                <h2 class="info-section__title"><span class="material-symbols-outlined">star</span>Топ породи котів</h2>
+                <div class="info-section__list">
+                    <div class="info-section__item cats-breed">
+                        <h3 class="cats-breed__name">Мейн-кун</h3>
+                        <p class="cats-breed__desc">Найбільша домашня порода котів</p>
+                        <span class="cats-breed__country">США</span>
+                    </div>
+
+                    <div class="info-section__item cats-breed">
+                        <h3 class="cats-breed__name">Сфінкс</h3>
+                        <p class="cats-breed__desc">Безшерстна порода з теплою шкірою</p>
+                        <span class="cats-breed__country">Канада</span>
+                    </div>
+
+                    <div class="info-section__item cats-breed">
+                        <h3 class="cats-breed__name">Британська короткошерста</h3>
+                        <p class="cats-breed__desc">Спокійна та дружелюбна порода</p>
+                        <span class="cats-breed__country">Великобританія</span>
+                    </div>
+
+                    <div class="info-section__item cats-breed">
+                        <h3 class="cats-breed__name">Персидська</h3>
+                        <p class="cats-breed__desc">Довгошерста порода з плоскою мордочкою</p>
+                        <span class="cats-breed__country">Іран</span>
+                    </div>
+                </div>
+            </section>
+            <section class="info-section history-section secrion__container">
+                <h2 class="info-section__title">Цікаві історії про котів</h2>
+                <div class="info-section__item cats-breed">
+                    <h3 class="cats-breed__name">Кіт-мандрівник</h3>
+                    <p class="cats-breed__desc">Історія про кота, який подолав 2000 км, щоб повернутися додому...</p>
+                    <span class="cats-reading__time">5 хв</span>
+                </div>
+                <div class="info-section__item cats-breed">
+                    <h3 class="cats-breed__name">Коти в космосі</h3>
+                    <p class="cats-breed__desc">Як коти допомогли освоїти космос та що відбувається з ними в
+                        невагомості...</p>
+                    <span class="cats-reading__time">3 хв</span>
+                </div>
+                <div class="info-section__item cats-breed">
+                    <h3 class="cats-breed__name">Кіт-мандрівник</h3>
+                    <p class="cats-breed__desc">Розшифровуємо значення різних звуків, які видають наші пухнасті друзі...
+                    </p>
+                    <span class="cats-reading__time">4 хв</span>
+                </div>
+            </section>
+
+            
+        </main>
+    </div>
+        <!-- Модальне вікно -->
+    <div id="imageModal" class="modal">
+        <span class="modal__close">&times;</span>
+        <img class="modal__content" id="modalImg">
+    </div>
+    <script src="js/navigation.js"></script>
+    <script src="js/cats.js"></script>
+</body>
+
+</html>

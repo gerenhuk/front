@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav nav__container">
+        <img src="image/menu/logo.png" alt="" class="logo">
+        <ul class="menu">
+          <li class="menu__list">
+            <a href="" class="menu__link">головна</a>
+          </li>
+          <li class="menu__list cats">
+            <a href="" class="menu__link"><img src="image/menu/black-cat.png" alt="" class="menu__img">коти</a>
+          </li>
+          <li class="menu__list game_wiki">
+            <a href="" class="menu__link"><img src="image/menu/game-controller.png" alt="" class="menu__img">вікі</a>
+          </li>
+          <li class="menu__list games">
+            <a href="" class="menu__link"><img src="image/menu/game-controller (1).png" alt=""
+                class="menu__img">ігри</a>
+          </li>
+          <li class="menu__list serials">
+            <a href="" class="menu__link"><img src="image/menu/streaming-tv-app.png" alt=""
+                class="menu__img">серіали</a>
+          </li>
+          <li class="menu__list crypta">
+            <a href="" class="menu__link"><img src="image/menu/bitcoin.png" alt="" class="menu__img">крипта</a>
+          </li>
+          <li class="menu__list music_block">
+            <a href="" class="menu__link"><img src="image/menu/music.png" alt="" class="menu__img">музика</a>
+          </li>
+          <li class="menu__list code_vs">
+            <a href="" class="menu__link"><img src="image/menu/programmer.png" alt="" class="menu__img"><span>VS</span>
+              code</a>
+          </li>
+          <li class="menu__list sports">
+            <a href="" class="menu__link"><img src="image/menu/throw.png" alt="" class="menu__img">спорт</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="about__block">
+        <h2 class="about__section-title"><span class="material-symbols-outlined">currency_bitcoin</span> Крипта
+        </h2>
+        <p class="about__section-subtitle">Фішки, плагіни та гарячі клавіші</p>
+      </div>
+      <section class="crypto-section info-section section__container">
+        <div class="crypto-header">
+          <span class="material-symbols-outlined">currency_bitcoin</span>
+          Топ криптовалюти
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Валюта</th>
+              <th>Ціна</th>
+              <th>Зміна 24г</th>
+              <th>Ринкова кап.</th>
+              <th>Об'єм</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="crypto-name">
+                  <span class="icon">B</span> BTC<br><small>Bitcoin</small>
+                </div>
+              </td>
+              <td>$43,250.67</td>
+              <td><span class="material-symbols-outlined positive">trending_up</span> 2.34%</td>
+              <td>$848.7B</td>
+              <td>$23.4B</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="crypto-name">
+                  <span class="icon">E</span> ETH<br><small>Ethereum</small>
+                </div>
+              </td>
+              <td>$2,634.89</td>
+              <td><span class="material-symbols-outlined negative">trending_down</span> 1.23%</td>
+              <td>$316.8B</td>
+              <td>$15.2B</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="crypto-name">
+                  <span class="icon">S</span> SOL<br><small>Solana</small>
+                </div>
+              </td>
+              <td>$98.45</td>
+              <td><span class="material-symbols-outlined positive">trending_up</span> 4.67%</td>
+              <td>$42.1B</td>
+              <td>$2.8B</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="crypto-name">
+                  <span class="icon">A</span> ADA<br><small>Cardano</small>
+                </div>
+              </td>
+              <td>$0.489</td>
+              <td><span class="material-symbols-outlined negative">trending_down</span> 0.89%</td>
+              <td>$17.2B</td>
+              <td>$543M</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="crypto-name">
+                  <span class="icon">A</span> AVAX<br><small>Avalanche</small>
+                </div>
+              </td>
+              <td>$36.78</td>
+              <td><span class="material-symbols-outlined positive">trending_up</span> 3.21%</td>
+              <td>$14.8B</td>
+              <td>$321M</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="crypto__container info-section">
+
+        <div class="crypto-block">
+          <h2 class="info-section__title">
+            <span class="material-symbols-outlined">vital_signs</span>
+            Графік динаміки курсів
+          </h2>
+          <p class="info-section__desc">BTC та ETH за останню добу</p>
+          <canvas id="chart" width="1160" height="500"></canvas>
+        </div>
+      </div>
+      <section class="crypto__news crypto-section__container">
+        <div class="cripto__grid">
+          <div class="info__section info-section">
+            <h2 class="info-section__title">Новини крипти</h2>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Bitcoin досяг нового максимуму за останні 6 місяців
+                <span class="raiting positive__raiting">Позитивний</span>
+              </p>
+              <p class="news__desc">Ціна біткоїна зросла на 15% за тиждень завдяки позитивним новинам про ETF...</p>
+              <p class="news__time">2 години тому</p>
+            </div>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Ethereum готується до наступного великого оновлення
+                <span class="raiting positive__raiting">Позитивний</span>
+              </p>
+              <p class="news__desc">Розробники анонсували важливі зміни в протоколі, які покращать масштабованість...</p>
+              <p class="news__time">5 години тому</p>
+            </div>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Нове регулювання криптовалют в ЄС
+                <span class="raiting neutral__raiting">Нейтральний</span>
+              </p>
+              <p class="news__desc">Європейський Союз прийняв нові правила для криптовалютних бірж та кастодіанів...</p>
+              <p class="news__time">1 день тому</p>
+            </div>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Solana показує стрімке зростання активності
+                <span class="raiting positive__raiting">Позитивний</span>
+              </p>
+              <p class="news__desc">Кількість транзакцій в мережі Solana досягла нових рекордів...</p>
+              <p class="news__time">1 день тому</p>
+            </div>
+          </div>
+          <div class="info__section explanation info-section">
+            <h2 class="info-section__title">
+              <span class="material-symbols-outlined">menu_book</span>
+              Пояснення для новачків</h2>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Що таке біткоїн?
+                <span class="read__time">5 хв</span>
+              </p>
+              <p class="news__desc">Основи першої та найпопулярнішої криптовалюти у світі</p>
+              <p class="raiting positive__raiting">Позитивний</p>
+            </div>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Як працює блокчейн?
+                <span class="read__time">7 хв</span>
+              </p>
+              <p class="news__desc">Простими словами про технологію, що лежить в основі криптовалют</p>
+              <p class="raiting positive__raiting">Позитивний</p>
+            </div>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Що таке DeFi?
+                <span class="read__time">5 хв</span>
+              </p>
+              <p class="news__desc">Децентралізовані фінанси: революція в банківській справі</p>
+              <p class="raiting neutral__raiting">Середній</p>
+            </div>
+            <div class="news-item info-section">
+              <p class="news__title">
+                Як безпечно зберігати криптовалюти?
+                <span class="read__time">5 хв</span>
+              </p>
+              <p class="news__desc">Гайд по холодним та гарячим гаманцям</p>
+              <p class="raiting positive__raiting">Позитивний</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/crypto.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+
+</html>
